@@ -29,7 +29,7 @@ export default function Gallery() {
   ))
 
   return (
-    <main className="xl:container box-content px-6 my-6 grid gap-6 md:gap-10 md:grid-cols-2 xl:grid-cols-4 items-start">
+    <main className="xl:container box-content px-6 my-6 grid gap-6 md:gap-10 md:grid-cols-2 xl:grid-cols-4 items-start md:my-10">
       {columnElements}
     </main>
   )
