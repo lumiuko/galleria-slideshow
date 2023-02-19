@@ -10,7 +10,7 @@ function App() {
   const { state } = useContext(AppContext)
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col leading-deafult">
       <Header />
       <SwitchTransition>
         <CSSTransition key={state.isSlideshow} classNames="fade" timeout={400}>
