@@ -1,20 +1,12 @@
-import { useContext } from 'react'
-
-import { AppContext } from '../context/AppContext'
 import Item from './Item'
 import data from '../data.json'
 
 export default function Gallery() {
-  const { dispatch } = useContext(AppContext)
   const columns = [[], [], [], []]
-
-  function goToSlide(slide) {
-    dispatch({ type: 'GOTO_SLIDE', payload: { slide } })
-  }
 
   data.forEach((item, index) => {
     const { column } = item
-    const element = <Item key={index} item={item} onClick={() => goToSlide(index)} />
+    const element = <Item key={index} item={item} id={index} />
     columns[column] = [...columns[column], element]
   })
 
