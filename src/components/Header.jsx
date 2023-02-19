@@ -10,8 +10,8 @@ export default function Header(props) {
 
   return (
     <header className="xl:container box-content xl:px-10">
-      <div className="flex border-b-[1px] border-b-gray justify-between items-center px-6 xl:px-0 py-6">
-        <img src="/assets/shared/logo.svg" alt="Logo" className="h-[32px]" />
+      <div className="flex border-b-[1px] border-b-gray justify-between items-center px-6 xl:px-0 py-6 md:py-7 xl:py-10">
+        <img src="/assets/shared/logo.svg" alt="Logo" className="h-[32px] xl:h-[48px]" />
         <button
           className="uppercase text-btn-sm text-dark-gray tracking-btn-sm font-bold leading-deafult md:tracking-btn-lg md:text-btn-lg hover:text-black transition-colors"
           onClick={toggleSlideshow}
